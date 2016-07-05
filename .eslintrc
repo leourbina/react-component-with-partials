@@ -1,0 +1,27 @@
+{
+  "parser": "babel-eslint",
+  "extends": ["airbnb/base", "plugin:react/recommended"],
+  "rules": {
+    "no-underscore-dangle": ["error", { "allowAfterThis": true }],
+    "new-cap": "off",
+    "no-console": 0
+  },
+  "plugins": [
+    "react"
+  ],
+  "settings": {
+    "react": {
+      "pragma": "React",
+      "version": "15.0"
+    }
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "globals": {
+    "describe": true,
+    "it": true
+  }
+}
