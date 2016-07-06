@@ -44,6 +44,7 @@
     "eslint-plugin-import": "^1.8.1",
     "eslint-plugin-jsx-a11y": "^1.2.3",
     "eslint-plugin-react": "^5.1.1",
+    "immutable": ">=2.0.10",
     "lodash.partial": ">=4.0.0",
     "mkdirp": "^0.5.1",
     "mocha": "^2.5.3",
