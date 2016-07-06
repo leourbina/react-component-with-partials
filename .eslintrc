@@ -3,8 +3,7 @@
   "extends": ["airbnb/base", "plugin:react/recommended"],
   "rules": {
     "no-underscore-dangle": ["error", { "allowAfterThis": true }],
-    "new-cap": "off",
-    "no-console": 0
+    "new-cap": "off"
   },
   "plugins": [
     "react"

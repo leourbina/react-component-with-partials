@@ -7,6 +7,7 @@ export default function ComponentWithPartials(Target) {
     constructor(props) {
       super(props);
       this.__partials__ = Map();
+      this.partial = partial.bind(this);
     }
 
     render() {
@@ -15,8 +16,6 @@ export default function ComponentWithPartials(Target) {
       );
     }
   }
-
-  Wrapper.prototype.partial = partial;
 
   return Wrapper;
 }
