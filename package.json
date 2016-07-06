@@ -1,6 +1,6 @@
 {
   "name": "react-component-with-partials",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "High Order Component for efficient partial functions in reactjs callbacks",
   "main": "./lib/src/index.js",
   "scripts": {
