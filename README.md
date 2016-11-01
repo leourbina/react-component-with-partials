@@ -10,7 +10,7 @@ npm install --save react-component-with-partials
 
 ## Usage
 
-This library exposes a high order component which passes down `partial` as a prop. `partial` maintains an internal cache of your partial'd functions, instead of creating a new partial function on every render, forcing re-renders downstream every time. Using this component alongside [`PureRenderMixin`](https://facebook.github.io/react/docs/pure-render-mixin.html) may yield a performance boost in some cases. YMMV.
+Wrap your component with `withPartials` and it will inject the `partial` prop, which can be used exactly like [`lodash.partial`](https://www.npmjs.com/package/lodash.partial). You can either wrap it by hand or use it as a es7 decorator:
 
 ``` javascript
 import React, { Component } from 'react';
@@ -38,3 +38,8 @@ class MyComponent extends Component {
 }
 
 ```
+
+
+## How it works
+
+This library exposes a high order component which passes down `partial` as a prop. `partial` maintains an internal cache of your partial'd functions, instead of creating a new partial function on every render, forcing re-renders downstream every time. Using this component alongside [`PureRenderMixin`](https://facebook.github.io/react/docs/pure-render-mixin.html) may yield a performance boost in some cases. YMMV.
