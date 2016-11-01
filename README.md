@@ -2,6 +2,12 @@
 
 Partials for your react components callbacks.
 
+## Get it
+
+``` shell
+npm install --save react-component-with-partials
+```
+
 ## Usage
 
 This library exposes a high order component which passes down `partial` as a prop. `partial` maintains an internal cache of your partial'd functions, instead of creating a new partial function on every render, forcing re-renders downstream every time. Using this component alongside [`PureRenderMixin`](https://facebook.github.io/react/docs/pure-render-mixin.html) may yield a performance boost in some cases. YMMV.
