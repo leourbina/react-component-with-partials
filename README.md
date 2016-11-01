@@ -8,9 +8,9 @@ This library exposes a high order component which passes down `partial` as a pro
 
 ``` javascript
 import React, { Component } from 'react';
-import ComponentWithPartials from 'react-component-with-partials';
+import withPartials from 'react-component-with-partials';
 
-@ComponentWithPartials
+@withPartials
 class MyComponent extends Component {
   render() {
     const { partial } = this.props;
