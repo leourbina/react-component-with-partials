@@ -12,6 +12,11 @@
     "react": {
       "pragma": "React",
       "version": "15.0"
+    },
+    "import/resolver": {
+      "webpack": {
+        "config": "webpack.config.babel.js"
+      }
     }
   },
   "parserOptions": {

@@ -1,3 +1,3 @@
-import ComponentWithPartials from './ComponentWithPartials';
+import withPartials from './withPartials';
 
-export default ComponentWithPartials;
+export default withPartials;

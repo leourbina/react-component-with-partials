@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Map } from 'immutable';
 import partial from './partial';
 
-export default function ComponentWithPartials(Target) {
+export default function withPartials(Target) {
   class Wrapper extends Component {
     constructor(props) {
       super(props);
@@ -12,7 +12,7 @@ export default function ComponentWithPartials(Target) {
 
     render() {
       return (
-        <Target {...this.props} partial={this.partial} />
+        <Target partial={this.partial} {...this.props} />
       );
     }
   }

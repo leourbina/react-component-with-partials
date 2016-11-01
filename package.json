@@ -1,11 +1,11 @@
 {
   "name": "react-component-with-partials",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "High Order Component for efficient partial functions in reactjs callbacks",
-  "main": "./lib/src/index.js",
+  "main": "./lib/index.js",
   "scripts": {
     "build": "npm run clean && npm run lint && npm run build:lib && npm run build:spec",
-    "build:lib": "mkdirp lib/src && babel src -d lib/src",
+    "build:lib": "mkdirp lib && babel src -d lib",
     "build:spec": "mkdirp lib/spec && babel spec -d lib/spec",
     "test": "npm run build && mocha --recursive lib/spec",
     "clean": "rimraf lib",
@@ -31,6 +31,10 @@
     "url": "https://github.com/leourbina/react-component-with-partials/issues"
   },
   "homepage": "https://github.com/leourbina/react-component-with-partials#readme",
+  "dependencies": {
+    "immutable": ">=2.0.10",
+    "lodash.partial": ">=4.0.0"
+  },
   "devDependencies": {
     "babel-cli": "^6.9.0",
     "babel-eslint": "^6.0.4",
@@ -52,8 +56,6 @@
     "rimraf": "^2.5.2"
   },
   "peerDependencies": {
-    "immutable": ">=2.0.10",
-    "lodash.partial": ">=4.0.0",
-    "react": "*"
+    "react": "^0.14.0 || ^15.0.0"
   }
 }
