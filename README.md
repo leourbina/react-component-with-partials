@@ -1,6 +1,6 @@
 # react-component-with-partials
 
-Partials for your react components callbacks.
+Partials for your react components callbacks. Because having `.bind` and arrow functions in your react components is an [antipattern](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-bind.md).
 
 ## Get it
 
