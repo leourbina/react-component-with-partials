@@ -42,4 +42,4 @@ class MyComponent extends Component {
 
 ## How it works
 
-This library exposes a high order component which passes down `partial` as a prop. `partial` maintains an internal cache of your partial'd functions, instead of creating a new partial function on every render, forcing re-renders downstream every time. Using this with [`PureComponent`](https://facebook.github.io/react/docs/react-component.html) may yield help performance by avoiding unnecessary GC in your app. YMMV.
+This library exposes a high order component which passes down `partial` as a prop. `partial` maintains an internal cache of your partial'd functions, instead of creating a new partial function on every render, forcing re-renders downstream every time. Using this with [`PureComponent`](https://facebook.github.io/react/docs/react-api.html#react.purecomponent) may yield help performance by avoiding unnecessary GC in your app. YMMV.
